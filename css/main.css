@@ -1,0 +1,482 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+/*this is the frist part in assiment*/
+.main{
+    
+    background-image: url(../images/images/drew-coffman-1872.jpg);
+    background-size: 100%;
+    background: content;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+   
+}
+ 
+/* start style navbar */
+.nav{
+    
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav .ullist{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-left: 10px;
+
+}
+
+.main .nav img{
+    
+   
+    size: 100%;
+
+
+}
+
+.main .nav  li{
+  
+  margin-right: 10px;
+  
+
+} 
+/* end style navbar */
+
+/* start main_caption */
+.main_caption{
+    position: absolute;
+    top: 200px;
+  left: 30%;
+    text-align: center;
+   
+    color: white;
+   margin: auto;
+}
+
+.main_caption .button1 ,  .button2{
+padding: 15px 15px;
+margin-top: 50px;
+color: white;
+}
+.main_caption .button1 {
+    background-color: #8e7754;
+    border: none;
+}
+.main_caption .button2{
+    background-color: transparent;    
+}
+/*end main_caption *
+
+/*this is  start style the fixed pare in right of screan*/
+
+.fixedpar{
+    width: 50px;
+    height: 70px;
+    position: fixed;
+    top: 300px;
+    right: 0px;
+    background-color: white;
+   
+   
+}
+.fixedpar ul li {
+    list-style: none;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*this is  end style the fixed pare in right of screan*/
+
+/* start about style  */
+
+.container{
+    
+    width: 80%;
+   overflow: auto;
+   margin: 40px auto;
+  
+
+}
+.container .about-imge {
+    
+    width:40%;
+    float:left;
+    
+}
+
+.container .about-imge img{
+    width: 100%;
+   
+}
+
+
+.about_caption{
+    width:55%;
+    
+    margin-top: 50px;
+   float: right;
+}
+.about_caption h2{
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "Alegreya";
+    
+
+} 
+.about_caption .caption ul li {
+    list-style: none;
+    margin-top: 20px;
+    
+}
+ 
+.about_caption .caption ul li p{
+    display: inline-block;
+    padding-left: 10px;
+}
+/* end about style  */
+
+/* start location style  */
+
+.overlay{
+    width: 100%;
+    background-color:  rgba(104, 104, 104,.1);
+
+}
+.location{
+    
+
+    width: 70%;
+  
+   margin: 50px auto;
+    overflow: auto;
+}
+
+.location .location-caption{
+    width: 50%;
+    float: left;
+
+}
+
+.location .location-caption h3{
+    padding: 50px;
+}
+
+.location .location-image{
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+   
+}
+
+.location .location-image img{
+  
+    width: 100%;
+    
+
+}
+.location .location-caption .location-parag{
+ margin-top: 20px;
+}
+/* end location style  */
+
+/* this is start banks pattern */
+
+.banks{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+
+
+}
+
+.bank{
+    width: 33.33333%;
+    float: left;
+  
+}
+
+.banks .bank img{
+    width: 100%;
+    padding-left: 20px;
+  
+}
+
+.banks h4{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.banks p{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 17px;
+    color:rgb(136, 136, 136);
+}
+.banks .bank h4{
+    padding: 20px;
+
+}
+.banks .bank p{
+    padding: 20px;
+
+}
+
+ /* this is end banks pattern */
+
+
+/* this is start contacts */
+
+
+
+.contact{
+
+width: 80%;
+overflow: auto;
+margin: auto;
+
+}
+
+.contact .contact_inf{
+    width: 40%;
+   
+    float: left;
+   
+}
+
+
+.contact .contact_inf h5 {
+    font-weight: 400;
+    font-size: 32px;
+    font-family: Alegreya;
+    margin: 20px;
+}
+
+.contact .contact_inf p{
+    font-size: 15px;
+    line-height: 1.86em;
+    font-family: 'Open Sans',arial;
+    font-weight: 400;
+    color: #686868;
+}
+.contact_inf ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+
+.contact_inf ul li p{
+    display: inline-block;
+    padding-left: 20px;
+}
+
+
+
+
+
+.contact .contact_map{
+   
+     
+   
+    width: 60%;
+
+    height: 500px;
+  
+   float: left;
+   text-align: center;
+   overflow: auto;
+    
+}
+
+.contact .contact_map  iframe {
+    width: 60%;
+   height: 300px;
+    margin-top: 30px;
+  
+   
+  
+} 
+
+/* this is end contacts */
+
+
+
+/* this is start the footer */
+
+
+
+.social_media{
+    background: #1b1b1b;
+    text-align: center;
+    overflow: auto;
+    margin-bottom: 50px;
+
+}
+.fab{
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.social_media img{
+    margin: 30px;
+}
+.social_media  p{
+
+    margin-bottom: 30px;
+}
+
+
+ /* this is end the footer */
+
+@media screen and (max-width: 600px) {
+
+.nav{
+    
+    color: aliceblue;
+    display: block;
+    overflow: hidden;
+    
+   
+}
+.main_caption{
+    position: absolute;
+    top: 110px;
+  left: 30%;
+    text-align: center;
+   
+   
+}
+
+.container .about-imge {
+    
+    width:100%;
+    
+    
+}
+.about_caption{
+    width:100%;
+    
+    margin-top: 50px;
+   
+}
+
+.location .location-caption{
+    width:100%;
+    text-align: center;
+    
+
+}
+.location .location-image{
+    width: 100%;
+  
+   
+}
+.bank{
+    width: 100%;
+   
+  
+}
+
+.contact .contact_inf{
+    width: 100%;
+   
+ 
+   
+}
+.contact .contact_inf h5{
+    text-align: center;
+}
+}
+@media screen and (min-width: 601px) and (max-width:768px) {
+    .nav{
+    
+        color: aliceblue;
+        display: block;
+        overflow: hidden;
+        
+       
+    }
+    .main_caption{
+        position: absolute;
+        top: 110px;
+      left: 30%;
+        text-align: center;
+       
+       
+    }
+
+    .container .about-imge {
+    
+        width:100%;
+       
+        
+    }
+    .about_caption{
+        width:100%;
+        
+       
+    }
+    .location .location-caption{
+        width:100%;
+        text-align: center;
+    
+    }
+    .location .location-image{
+        width: 100%;
+      
+       
+    }
+
+    .bank{
+        width: 100%;
+       
+      
+    }
+    .contact .contact_inf{
+        width: 100%;
+    
+    }
+    .contact .contact_inf h5{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 769px) and (max-width:992px) {
+    .container .about-imge {
+    
+        width:100%;
+       
+        
+    }
+    .about_caption{
+        width:100%;
+        
+       
+    }
+    .location .location-caption{
+        width:100%;
+        text-align: center;
+        
+    
+    }
+    .location .location-image{
+        width: 50%;
+      
+       
+    }
+}
+@media screen and (min-width:993px)  {
+    
+}
