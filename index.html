@@ -1,7 +1,7 @@
 <html>
   
  <head>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/all.min.css"/>
   <link rel="stylesheet" href="css/main.css">
  
@@ -12,17 +12,17 @@
 
   
 
-  <header class ="main">
+  <header class ="main" id="Home">
      <!-- this is navbar code  -->
     <nav class="nav">
       <img src="images/images/bakery-light-1.png" alt="logo" />
       <ul  class="ullist">
-        <li>Home</li>
-        <li>About</li>
-        <li>Our Offer</li>
-        <li>gellery</li>
-        <li>Blog</li>
-        <li>Contact	</li>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Our Offer">Our Offer</a></li>
+        <li><a href="#gellery">gellery</a></li>
+      
+        <li><a href="#Contact">Contact</a>	</li>
       </ul>
     </nav>
        <!-- this is end navbar code  -->
@@ -34,14 +34,15 @@
       <br>
       <h1>  Family Bakery </h1>
        <p >We're the biggest, best equipped and most advanced Bakery in the greater Los Angeles area.</p>  
-       
-         
+       <div class="home_button" >
         <button class="button1">learn more</button>
        <button class="button2">contact us</button> 
-       
+      </div> 
+      </div>    
+      
       <!-- this is end main caption code  -->
        
-    </div>
+    
 
   </header>
   
@@ -64,7 +65,8 @@
 
   
   <!-- /* start about code */ -->
-  <div class="container">
+  <section id="About">
+  <div class="container" >
 
     <div class="about-imge">
       
@@ -111,10 +113,12 @@
 
 
  </div>
+</section>
   <!-- /* end about code */ -->
 
 
  <!-- the start location page -->
+ <section id="Our Offer">
  <div class="overlay">
   <div class="location">
 
@@ -135,6 +139,7 @@
   </div>
  </div>
  <div class="clr"></div>
+</section>
   <!-- the end location page -->
 
  
@@ -143,7 +148,7 @@
 
   <!-- thise the banks code -->
 
-
+<section id="gellery">
   <div class="banks">
 
     <h4>Our Baking</h4>
@@ -174,10 +179,11 @@
 
 
   </div>
-
+</section>
    
   <!-- thise is start the contact us part -->
-<div class="overlay">
+  <section id="Contact">
+   <div class="overlay">
   <div class="contact">
     <div class="contact_inf">
 
@@ -219,9 +225,9 @@
     </div>
 
   </div>
-</div>
+   </div>
 
-      
+  </section>     
     <!-- this is the end part
   -->
     
@@ -230,16 +236,17 @@
      <img src="images/images/bakery-color.png" alt="Copyright 2017. All rights reserved.">
      <p>Copyright 2017. All rights reserved.</p>
 
-     <div class="icon_social">
-         
-      <a href="#" class="social icon-facebook" target="_blank"><i  class="fab fa-facebook fa-5x"></i></a>
-      <a href="#" class="social icon-google-plus" target="_blank"><i class="fab fa-instagram-square fa-5x"></i></a>
-      <a href="#" class="social icon-linkedin" target="_blank"><i class="far fa-envelope fa-5x"></i></a>
-      <a href="#" class="social icon-twitter" target="_blank"><i class="fab fa-twitter-square fa-5x"></i></a>
-
+     <div class="icon_social" >
+       <ul>
+        <li href="#" class="social icon-facebook" target="_blank"><i  class="fab fa-facebook fa-5x"></i></li>
+        <li href="#" class="social icon-google-plus" target="_blank"><i class="fab fa-instagram-square fa-5x"></i></li>
+        <li href="#" class="social icon-linkedin" target="_blank"><i class="far fa-envelope fa-5x"></i></a>
+        <li href="#" class="social icon-twitter" target="_blank"><i class="fab fa-twitter-square fa-5x"></i></li>
+      </ul>
      </div>
 
     </footer>
+    <script src="/__/firebase/7.21.1/firebase-app.js"></script>
  </body>
 
 

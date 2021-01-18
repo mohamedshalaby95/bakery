@@ -4,6 +4,9 @@
     box-sizing: border-box;
     
 }
+html{
+    scroll-behavior: smooth;
+    }
 
 
 
@@ -11,11 +14,12 @@
 .main{
     
     background-image: url(../images/images/drew-coffman-1872.jpg);
-    background-size: 100%;
+    background-size: 100% 100%;
+    
     background: content;
     background-repeat: no-repeat;
     height: 100vh;
-    position: relative;
+   
    
 }
  
@@ -33,13 +37,24 @@
     align-items: center;
     justify-content: right;
     padding-left: 10px;
+    margin-right: 50px;
 
+}
+.nav li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.nav li a:hover{
+    color: gray;
+    transition-duration: all 1s;
 }
 
 .main .nav img{
     
    
     size: 100%;
+    margin-left: 50px;
 
 
 }
@@ -54,26 +69,37 @@
 
 /* start main_caption */
 .main_caption{
-    position: absolute;
-    top: 200px;
-  left: 30%;
-    text-align: center;
+    width:100%;
+    height:100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ 
+   flex-direction: column;
+   color: white;
    
-    color: white;
-   margin: auto;
+  
 }
 
-.main_caption .button1 ,  .button2{
-padding: 15px 15px;
+.home_button{
+
+display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.home_button .button1 {
+    background-color: #8e7754;
+    border: none;
+    padding: 15px 15px;
 margin-top: 50px;
 color: white;
 }
-.main_caption .button1 {
-    background-color: #8e7754;
-    border: none;
-}
-.main_caption .button2{
-    background-color: transparent;    
+.home_button .button2{
+    background-color: transparent; 
+    padding: 15px 15px;
+margin-top: 50px;
+color: white;   
 }
 /*end main_caption *
 
@@ -319,7 +345,7 @@ margin: auto;
 
 
 .social_media{
-    background: #1b1b1b;
+    background-color:rgba(0, 0, 0, 0.6);
     text-align: center;
     overflow: auto;
     margin-bottom: 50px;
@@ -337,28 +363,26 @@ margin: auto;
 
     margin-bottom: 30px;
 }
-
+.icon_social li{
+    display: inline-block;
+}
 
  /* this is end the footer */
 
 @media screen and (max-width: 600px) {
+   
 
 .nav{
     
     color: aliceblue;
     display: block;
     overflow: hidden;
+   
     
    
 }
-.main_caption{
-    position: absolute;
-    top: 110px;
-  left: 30%;
-    text-align: center;
-   
-   
-}
+
+
 
 .container .about-imge {
     
@@ -401,22 +425,18 @@ margin: auto;
 }
 }
 @media screen and (min-width: 601px) and (max-width:768px) {
+    
+   
     .nav{
     
         color: aliceblue;
         display: block;
         overflow: hidden;
         
+        
        
     }
-    .main_caption{
-        position: absolute;
-        top: 110px;
-      left: 30%;
-        text-align: center;
-       
-       
-    }
+   
 
     .container .about-imge {
     
@@ -454,6 +474,7 @@ margin: auto;
     }
 }
 @media screen and (min-width: 769px) and (max-width:992px) {
+    
     .container .about-imge {
     
         width:100%;
@@ -472,11 +493,8 @@ margin: auto;
     
     }
     .location .location-image{
-        width: 50%;
+        width: 100%;
       
        
     }
-}
-@media screen and (min-width:993px)  {
-    
 }
